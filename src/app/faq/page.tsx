@@ -20,8 +20,8 @@ export default function FaqPage() {
   return (
     <>
       <Header />
-      <main className="container pt-3 md:pt-4 pb-8">
-        <h1 className="mb-4">FAQ</h1>
+      <main className="mx-auto max-w-[390px] sm:max-w-2xl px-4 pt-3 md:pt-4 pb-8 text-center">
+        <h1 className="mb-4 text-[28px] sm:text-[32px] md:text-[36px] font-bold">FAQ</h1>
         <p className="mb-6">Quick answers to the most common questions.</p>
 
         <div className="space-y-4">

@@ -10,7 +10,6 @@ const Footer = () => {
     { href: "/privacy", label: "Privacy" },
     { href: "/terms", label: "Terms" },
     { href: "/contact", label: "Contact" },
-    { href: "/faq", label: "FAQ" },
   ];
 
   const visibleLinks = links.filter((link) => link.href !== pathname);
