@@ -1,0 +1,86 @@
+"use client";
+import React from 'react';
+import Image from 'next/image';
+
+interface AppStoreButtonProps {
+  href: string;
+  className?: string;
+}
+
+const AppStoreButton = ({ href, className = "" }: AppStoreButtonProps) => {
+  return (
+    <a 
+      href={href} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className={`inline-flex items-center bg-black text-white rounded-lg px-6 py-4 hover:bg-gray-800 hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline ${className}`}
+      style={{ 
+        minWidth: '220px', 
+        height: '70px',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
+        borderRadius: '12px',
+        outline: 'none',
+        border: 'none'
+      }}
+    >
+      <div className="flex items-center w-full">
+        {/* Apple Logo - Local SVG */}
+        <div className="mr-4 flex-shrink-0">
+          <Image
+            src="/icons8-apple.svg"
+            alt="Apple"
+            width={28}
+            height={28}
+            className="w-7 h-7"
+          />
+        </div>
+        
+        {/* Text */}
+        <div className="text-left flex-grow">
+          <div className="text-sm leading-tight font-normal text-white">Download on the</div>
+          <div className="text-xl font-medium leading-tight -mt-0.5">App Store</div>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+const GooglePlayButton = ({ href, className = "" }: AppStoreButtonProps) => {
+  return (
+    <a 
+      href={href} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className={`inline-flex items-center bg-black text-white rounded-lg px-6 py-4 hover:bg-gray-800 hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline ${className}`}
+      style={{ 
+        minWidth: '220px', 
+        height: '70px',
+        fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
+        borderRadius: '12px',
+        outline: 'none',
+        border: 'none'
+      }}
+    >
+      <div className="flex items-center w-full">
+        {/* Google Play Logo - Local SVG */}
+        <div className="mr-4 flex-shrink-0">
+          <Image
+            src="/google-play-svgrepo-com.svg"
+            alt="Google Play"
+            width={28}
+            height={28}
+            className="w-7 h-7"
+          />
+        </div>
+        
+        {/* Text */}
+        <div className="text-left flex-grow">
+          <div className="text-sm leading-tight font-normal text-white">GET IT ON</div>
+          <div className="text-xl font-medium leading-tight -mt-0.5">Google Play</div>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+export { AppStoreButton, GooglePlayButton };
