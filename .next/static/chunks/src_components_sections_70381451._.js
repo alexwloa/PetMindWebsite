@@ -39,7 +39,6 @@ const Header = ()=>{
             label: "Contact"
         }
     ];
-    const visibleLinks = links.filter((link)=>link.href !== pathname);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: "py-4 px-4 md:px-6 flex items-center justify-between",
         children: [
@@ -55,7 +54,7 @@ const Header = ()=>{
                         className: "h-9 w-9 rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/header.tsx",
-                        lineNumber: 22,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -63,35 +62,38 @@ const Header = ()=>{
                         children: "PetMind"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/header.tsx",
-                        lineNumber: 29,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sections/header.tsx",
-                lineNumber: 21,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "hidden sm:flex items-center gap-6",
-                children: visibleLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                className: "flex items-center gap-4 sm:gap-6",
+                children: links.map((link)=>{
+                    const isActive = pathname === link.href;
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: link.href,
-                        className: "text-sm hover:underline hover:scale-105 transition-all duration-200 ease-in-out",
+                        className: `text-xs sm:text-sm transition-all duration-200 ease-in-out ${isActive ? 'underline font-semibold text-base sm:text-lg' : 'hover:underline hover:scale-105'}`,
                         children: link.label
                     }, link.label, false, {
                         fileName: "[project]/src/components/sections/header.tsx",
                         lineNumber: 35,
-                        columnNumber: 11
-                    }, this))
+                        columnNumber: 13
+                    }, this);
+                })
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/header.tsx",
-                lineNumber: 33,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/sections/header.tsx",
-        lineNumber: 19,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 };

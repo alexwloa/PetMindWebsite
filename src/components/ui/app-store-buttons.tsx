@@ -13,7 +13,7 @@ const AppStoreButton = ({ href, className = "" }: AppStoreButtonProps) => {
       href={href} 
       target="_blank" 
       rel="noopener noreferrer"
-      className={`inline-flex items-center bg-black text-white rounded-lg px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-800 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline text-sm sm:text-base ${className}`}
+      className={`inline-flex items-center bg-black text-white rounded-lg px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-800 hover:scale-105 sm:hover:scale-110 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline text-sm sm:text-base shadow-[0_4px_12px_rgba(0,0,0,0.2)] ${className}`}
       style={{ 
         minWidth: '180px', 
         height: '56px',
@@ -51,7 +51,7 @@ const GooglePlayButton = ({ href, className = "" }: AppStoreButtonProps) => {
       href={href} 
       target="_blank" 
       rel="noopener noreferrer"
-      className={`inline-flex items-center bg-black text-white rounded-lg px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-800 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline text-sm sm:text-base ${className}`}
+      className={`inline-flex items-center bg-black text-white rounded-lg px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-800 hover:scale-105 sm:hover:scale-110 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline text-sm sm:text-base shadow-[0_4px_12px_rgba(0,0,0,0.2)] ${className}`}
       style={{ 
         minWidth: '180px', 
         height: '56px',

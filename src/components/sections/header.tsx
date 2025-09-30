@@ -13,8 +13,6 @@ const Header = () => {
     { href: "/contact", label: "Contact" },
   ];
 
-  const visibleLinks = links.filter((link) => link.href !== pathname);
-
   return (
     <header className="py-4 px-4 md:px-6 flex items-center justify-between">
       {/* Top-left logo and brand */}
@@ -30,12 +28,23 @@ const Header = () => {
       </Link>
       
       {/* Top-right navigation */}
-      <nav className="hidden sm:flex items-center gap-6">
-        {visibleLinks.map((link) => (
-          <Link key={link.label} href={link.href} className="text-sm hover:underline hover:scale-105 transition-all duration-200 ease-in-out">
-            {link.label}
-          </Link>
-        ))}
+      <nav className="flex items-center gap-4 sm:gap-6">
+        {links.map((link) => {
+          const isActive = pathname === link.href;
+          return (
+            <Link 
+              key={link.label} 
+              href={link.href} 
+              className={`text-xs sm:text-sm transition-all duration-200 ease-in-out ${
+                isActive 
+                  ? 'underline font-semibold text-base sm:text-lg' 
+                  : 'hover:underline hover:scale-105'
+              }`}
+            >
+              {link.label}
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );
