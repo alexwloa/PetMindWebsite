@@ -6,7 +6,8 @@
       "Bash(npm install)",
       "Bash(npm run build:*)",
       "Bash(npm install:*)",
-      "Bash(del \"C:\\Users\\alex0\\Documents\\Programmieren\\PetMindWebsite\\src\\components\\ui\\chart.tsx\")"
+      "Bash(del \"C:\\Users\\alex0\\Documents\\Programmieren\\PetMindWebsite\\src\\components\\ui\\chart.tsx\")",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
