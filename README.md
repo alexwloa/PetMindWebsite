@@ -1,4 +1,4 @@
-# PetMind Website
+# PetMind Website test
 
 Eine moderne Landing Page für die PetMind App - Lerne Tiere besser kennen.
 
