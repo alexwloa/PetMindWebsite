@@ -41,7 +41,7 @@ const AppShowcase = () => {
     }
   ];
 
-  const renderStars = (rating) => {
+  const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
       <span key={i} className={`text-lg ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}>
         ★
@@ -49,7 +49,7 @@ const AppShowcase = () => {
     ));
   };
 
-  const getTestimonialPosition = (position) => {
+  const getTestimonialPosition = (position: string) => {
     switch (position) {
       case 'top-left':
         return 'absolute top-[-180px] left-[-450px] w-[240px]';
