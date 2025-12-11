@@ -14,25 +14,17 @@ export default function ContactPage() {
           <h4 className="mb-4 text-lg sm:text-xl font-semibold">Support</h4>
           <p className="text-base sm:text-lg">
             Email us at{" "}
-            <a className="underline" href="mailto:support@petmind.app">support@petmind.app</a>
+            <a className="underline" href="mailto:mobilemediaconnects@gmail.com">mobilemediaconnects@gmail.com</a>
             {" "}and we'll reply within 1–2 business days.
-          </p>
-        </section>
-
-        <section className="mb-10">
-          <h4 className="mb-4 text-lg sm:text-xl font-semibold">Press & Partnerships</h4>
-          <p className="text-base sm:text-lg">
-            For media or partnership inquiries, contact{" "}
-            <a className="underline" href="mailto:press@petmind.app">press@petmind.app</a>.
           </p>
         </section>
 
         <section>
           <h4 className="mb-4 text-lg sm:text-xl font-semibold">Company</h4>
           <address className="not-italic text-base sm:text-lg text-muted">
-            PetMind, Inc.<br />
-            123 Wellness Ave, Suite 200<br />
-            Berlin, Germany
+            Alexander Wimmer<br />
+            Blumenweg 2b<br />
+            82041 Oberhaching, Germany
           </address>
         </section>
       </main>

@@ -7,7 +7,11 @@
       "Bash(npm run build:*)",
       "Bash(npm install:*)",
       "Bash(del \"C:\\Users\\alex0\\Documents\\Programmieren\\PetMindWebsite\\src\\components\\ui\\chart.tsx\")",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git reset:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ],
     "deny": [],
     "ask": []

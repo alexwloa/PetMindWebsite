@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "PetMind - Understand Your Pets Better",
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

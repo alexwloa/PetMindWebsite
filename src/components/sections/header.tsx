@@ -2,6 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const pathname = usePathname();
@@ -27,8 +34,8 @@ const Header = () => {
         <span className="text-2xl font-semibold text-black">PetMind</span>
       </Link>
       
-      {/* Top-right navigation */}
-      <nav className="flex items-center gap-4 sm:gap-6">
+      {/* Desktop navigation - hidden on mobile */}
+      <nav className="hidden md:flex items-center gap-4 sm:gap-6">
         {links.map((link) => {
           const isActive = pathname === link.href;
           return (
@@ -46,6 +53,30 @@ const Header = () => {
           );
         })}
       </nav>
+
+      {/* Mobile navigation - dropdown menu */}
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild className="md:hidden">
+          <button className="p-2 outline-none focus:outline-none" aria-label="Menü öffnen">
+            <Menu className="h-6 w-6 text-black" />
+          </button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-40">
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <DropdownMenuItem key={link.label} asChild>
+                <Link 
+                  href={link.href} 
+                  className={`w-full ${isActive ? 'font-semibold' : ''}`}
+                >
+                  {link.label}
+                </Link>
+              </DropdownMenuItem>
+            );
+          })}
+        </DropdownMenuContent>
+      </DropdownMenu>
     </header>
   );
 };
