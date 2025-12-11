@@ -12,8 +12,16 @@ export default function FaqPage() {
       a: "Yes. Our mobile app is available for both iOS and Android devices.",
     },
     {
-      q: "How can I contact support?",
-      a: "Email support@petmind.app and we'll get back within 1–2 business days.",
+      q: "Is PetMind free?",
+      a: "PetMind offers a free version with limited analyses. For unlimited access and premium features, you can upgrade to our Basic or Premium subscription.",
+    },
+    {
+      q: "Can PetMind replace a vet?",
+      a: "No. PetMind is for entertainment and informational purposes only. It cannot diagnose illnesses or provide medical advice. If your pet shows signs of illness, always consult a veterinarian.",
+    },
+    {
+      q: "What animals does PetMind support?",
+      a: "PetMind works best with dogs and cats, but you can try it with other pets too. The AI analyzes body language and facial expressions to provide insights.",
     },
   ];
 

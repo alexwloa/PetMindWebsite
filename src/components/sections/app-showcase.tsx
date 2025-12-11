@@ -5,9 +5,9 @@ const AppShowcase = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Start with first phone active
 
   const phones = [
-    { id: 0, title: "PetMind", subtitle: "App Screenshot 1" },
-    { id: 1, title: "PetMind", subtitle: "App Screenshot 2" },
-    { id: 2, title: "PetMind", subtitle: "App Screenshot 3" }
+    { id: 0, title: "PetMind", subtitle: "App Screenshot 1", video: "/main1(1).mp4" },
+    { id: 1, title: "PetMind", subtitle: "App Screenshot 2", video: "/second.mp4" },
+    { id: 2, title: "PetMind", subtitle: "App Screenshot 3", video: "/third.mp4" }
   ];
 
   const testimonials = [
@@ -117,9 +117,15 @@ const AppShowcase = () => {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80px] sm:w-[100px] h-[20px] sm:h-[25px] bg-[#222222] rounded-b-[12px] sm:rounded-b-[15px] z-10" />
               
               {/* Screen */}
-              <div className="w-full h-full bg-gradient-to-b from-blue-500 to-purple-600 rounded-[24px] sm:rounded-[30px] flex flex-col items-center justify-center text-center p-4 sm:p-8">
-                <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">{phone.title}</h3>
-                <p className="text-white/80 text-sm sm:text-base">{phone.subtitle}</p>
+              <div className="w-full h-full bg-black rounded-[24px] sm:rounded-[30px] overflow-hidden">
+                <video
+                  src={phone.video}
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
               </div>
             </div>
           );
