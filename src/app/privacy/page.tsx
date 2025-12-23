@@ -7,7 +7,7 @@ export default function PrivacyPage() {
       <Header />
       <main className="mx-auto max-w-[390px] sm:max-w-2xl px-4 pt-3 md:pt-4 pb-8 text-center">
         <h1 className="mb-6 text-[32px] sm:text-[36px] md:text-[40px] font-bold">Privacy Policy</h1>
-        <p className="mb-8 text-base sm:text-lg text-muted-foreground">Last updated: November 2025</p>
+        <p className="mb-8 text-base sm:text-lg text-muted-foreground">Last updated: December 2025</p>
 
         <section className="mb-10">
           <h4 className="mb-4 text-lg sm:text-xl font-semibold">1. Who We Are</h4>
@@ -43,6 +43,7 @@ export default function PrivacyPage() {
             <p><strong>OpenAI & Google Gemini</strong> – Your photos and messages go here for AI analysis</p>
             <p><strong>Supabase</strong> – Stores your account, photos, and analyses</p>
             <p><strong>RevenueCat</strong> – Manages subscriptions</p>
+            <p><strong>Google AdMob</strong> – Shows ads to free users (collects device identifiers for personalized ads)</p>
             <p><strong>Apple / Google</strong> – Processes payments</p>
           </div>
           <p className="text-base sm:text-lg mt-3">These services are in the USA. Your data is protected by standard contractual clauses as required by EU law.</p>
