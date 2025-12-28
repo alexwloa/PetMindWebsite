@@ -15,8 +15,8 @@ const Hero = () => {
       
       {/* CTA buttons */}
       <div className="mt-6 sm:mt-8 -mb-6 sm:-mb-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-        <AppStoreButton href="#" />
-        <GooglePlayButton href="#" />
+        <AppStoreButton href="https://apps.apple.com/app/petmind/id6756654827" />
+        <GooglePlayButton href="https://play.google.com/store/apps/details?id=com.petmind.app" />
       </div>
     </header>
   );

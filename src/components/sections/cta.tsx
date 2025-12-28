@@ -44,8 +44,8 @@ const CtaSection = () => {
         Join thousands of pet owners understanding their pets better
       </p>
       <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
-        <AppStoreButton href="#" />
-        <GooglePlayButton href="#" />
+        <AppStoreButton href="https://apps.apple.com/app/petmind/id6756654827" />
+        <GooglePlayButton href="https://play.google.com/store/apps/details?id=com.petmind.app" />
       </div>
       
       {/* Mobile Testimonials - Only visible on mobile/tablet */}
