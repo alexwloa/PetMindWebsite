@@ -1,5 +1,19 @@
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - PetMind Support & Feedback",
+  description: "Contact the PetMind team for support, feedback, or questions about our AI pet behavior analysis app. We respond within 1-2 business days.",
+  alternates: {
+    canonical: "https://petmind.cc/contact",
+  },
+  openGraph: {
+    title: "Contact Us - PetMind Support",
+    description: "Get in touch with the PetMind team for support and feedback.",
+    url: "https://petmind.cc/contact",
+  },
+};
 
 export default function ContactPage() {
 

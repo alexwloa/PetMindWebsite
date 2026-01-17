@@ -1,5 +1,19 @@
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service - PetMind App Usage Terms",
+  description: "Read PetMind's Terms of Service. Understand your rights and responsibilities when using our AI pet behavior analysis app. Simple, clear terms.",
+  alternates: {
+    canonical: "https://petmind.cc/terms",
+  },
+  openGraph: {
+    title: "Terms of Service - PetMind",
+    description: "Terms of Service for PetMind AI pet behavior analysis app.",
+    url: "https://petmind.cc/terms",
+  },
+};
 
 export default function TermsPage() {
   return (

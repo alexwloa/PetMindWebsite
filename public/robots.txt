@@ -1,0 +1,20 @@
+# Robots.txt for PetMind
+# https://petmind.cc
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Disallow: /api/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://petmind.cc/sitemap.xml
+
+# Host
+Host: https://petmind.cc

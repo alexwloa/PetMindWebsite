@@ -1,5 +1,19 @@
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - How PetMind Protects Your Data",
+  description: "Learn how PetMind protects your privacy. We explain what data we collect, how we use it, and your rights under GDPR. Your pet photos and data are safe with us.",
+  alternates: {
+    canonical: "https://petmind.cc/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy - PetMind",
+    description: "Learn how PetMind protects your privacy and handles your pet data securely.",
+    url: "https://petmind.cc/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (
