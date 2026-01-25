@@ -7,15 +7,26 @@ interface AppStoreButtonProps {
   className?: string;
 }
 
+// Google Analytics Event Tracking
+const trackDownloadClick = (platform: 'ios' | 'android') => {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', 'download_click', {
+      platform: platform,
+      button_text: platform === 'ios' ? 'App Store' : 'Google Play',
+    });
+  }
+};
+
 const AppStoreButton = ({ href, className = "" }: AppStoreButtonProps) => {
   return (
-    <a 
-      href={href} 
-      target="_blank" 
+    <a
+      href={href}
+      target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackDownloadClick('ios')}
       className={`inline-flex items-center bg-black text-white rounded-lg px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-800 hover:scale-105 sm:hover:scale-110 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline text-sm sm:text-base shadow-[0_4px_12px_rgba(0,0,0,0.2)] ${className}`}
-      style={{ 
-        minWidth: '180px', 
+      style={{
+        minWidth: '180px',
         height: '56px',
         fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
         borderRadius: '12px',
@@ -47,13 +58,14 @@ const AppStoreButton = ({ href, className = "" }: AppStoreButtonProps) => {
 
 const GooglePlayButton = ({ href, className = "" }: AppStoreButtonProps) => {
   return (
-    <a 
-      href={href} 
-      target="_blank" 
+    <a
+      href={href}
+      target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackDownloadClick('android')}
       className={`inline-flex items-center bg-black text-white rounded-lg px-4 sm:px-6 py-3 sm:py-4 hover:bg-gray-800 hover:scale-105 sm:hover:scale-110 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out focus:outline-none focus:ring-0 active:outline-none no-underline hover:no-underline text-sm sm:text-base shadow-[0_4px_12px_rgba(0,0,0,0.2)] ${className}`}
-      style={{ 
-        minWidth: '180px', 
+      style={{
+        minWidth: '180px',
         height: '56px',
         fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif',
         borderRadius: '12px',
