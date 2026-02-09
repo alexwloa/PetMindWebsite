@@ -11,7 +11,7 @@ dist/
 
 # Claude Code
 .claude/
-.docs/
+docs/
 # Debug
 npm-debug.log*
 yarn-debug.log*
