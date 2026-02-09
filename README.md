@@ -1,29 +1,27 @@
-# PetMind Website test
+# PetMind Website
 
-Eine moderne Landing Page für die PetMind App - Lerne Tiere besser kennen.
+A modern landing page for the PetMind app - Understand your pets better.
 
-## Entwicklung
+## Development
 
-Entwicklungsserver starten:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Die Website ist dann unter [http://localhost:3000](http://localhost:3000) erreichbar.
+The website will be available at [http://localhost:3000](http://localhost:3000).
 
-## Technischer Stack
+## Tech Stack
 
-- **Next.js 15** mit App Router
-- **React 19** mit TypeScript
-- **Tailwind CSS 4** für Styling
-- **Shadcn/UI** Komponenten-System
-- **Framer Motion** für Animationen
+- **Next.js 15** with App Router
+- **React 19** with TypeScript
+- **Tailwind CSS 4** for styling
+- **Shadcn/UI** component system
 
 ## Features
 
-- Mobile-First Design (390px Container)
-- Zweisprachig (Deutsch/Englisch)
-- Responsive Design
-- App Store Download-Buttons
-- Moderne UI-Komponenten
+- Mobile-first design
+- Responsive layout
+- App Store & Google Play download buttons
+- SEO optimized with structured data
