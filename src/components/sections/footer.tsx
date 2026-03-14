@@ -26,7 +26,7 @@ const Footer = () => {
           ))}
         </nav>
         <p className="text-xs text-center">
-          © 2025 PetMind. All rights reserved.
+          © 2026 PetMind. All rights reserved.
         </p>
       </div>
     </footer>

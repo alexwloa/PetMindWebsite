@@ -18,13 +18,13 @@ const CtaSection = () => {
     {
       id: 3,
       name: "Lisa K.",
-      text: "The AI analysis is spot on. My pets are happier now!",
+      text: "The AI analysis is spot on. My animals are happier now!",
       rating: 5,
     },
     {
       id: 4,
       name: "Tom B.",
-      text: "Best pet app ever! Understanding my pets has never been easier.",
+      text: "Best animal app ever! Understanding my animals has never been easier.",
       rating: 5,
     }
   ];
@@ -39,9 +39,9 @@ const CtaSection = () => {
 
   return (
     <section className="text-center py-8 sm:py-12 px-4">
-      <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-semibold" style={{ color: 'var(--color-accent-coral)' }}>Ready to understand your pets better?</h2>
+      <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-semibold" style={{ color: 'var(--color-accent-coral)' }}>Ready to understand your animals better?</h2>
       <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground">
-        Join thousands of pet owners understanding their pets better
+        Join thousands of animal owners understanding their animals better
       </p>
       <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
         <AppStoreButton href="https://apps.apple.com/app/petmind/id6756654827" />
@@ -55,10 +55,10 @@ const CtaSection = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-[#15483f] rounded-lg p-4 shadow-lg border border-white/20 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer"
+              className="bg-card rounded-lg p-4 shadow-lg border border-white/20 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer"
             >
               <div className="flex items-center mb-2">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm mr-2">
+                <div className="w-8 h-8 bg-[#4A6B4A] rounded-full flex items-center justify-center text-white font-bold text-sm mr-2">
                   {testimonial.name.charAt(0)}
                 </div>
                 <span className="font-semibold text-sm text-white">{testimonial.name}</span>

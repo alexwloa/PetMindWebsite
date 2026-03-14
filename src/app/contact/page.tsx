@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us - PetMind Support & Feedback",
-  description: "Contact the PetMind team for support, feedback, or questions about our AI pet behavior analysis app. We respond within 1-2 business days.",
+  description: "Contact the PetMind team for support, feedback, or questions about our AI animal identifier app. We respond within 1-2 business days.",
   alternates: {
     canonical: "https://petmind.cc/contact",
   },

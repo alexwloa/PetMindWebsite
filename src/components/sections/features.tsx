@@ -4,17 +4,17 @@ const featuresData = [
   {
     icon: "📸",
     title: "Photo Analysis",
-    description: "Upload photos or videos of your pets and get instant behavior insights",
+    description: "Upload photos of your animals and get instant behavior insights",
   },
   {
     icon: "💬",
     title: "Expert Chat",
-    description: "Get personalized advice about your pet's behavior and needs",
+    description: "Get personalized advice about your animal's behavior and needs",
   },
   {
     icon: "📊",
-    title: "Pet Profiles",
-    description: "Create profiles for your pets and track their behavior over time",
+    title: "Animal Profiles",
+    description: "Create profiles for your animals and track their behavior over time",
   },
 ];
 

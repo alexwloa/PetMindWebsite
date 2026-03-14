@@ -19,33 +19,33 @@ html, body {
 
 @theme {
   /* Shadcn/UI colors */
-  --color-background: #faeed7;
-  --color-foreground: #000000;
+  --color-background: #2B6B7F;
+  --color-foreground: #ffffff;
 
-  --color-card: #15483f;
+  --color-card: #8bab8b;
   --color-card-foreground: #FFFFFF;
 
-  --color-popover: #faeed7;
-  --color-popover-foreground: #000000;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
 
-  --color-primary: #000000;
-  --color-primary-foreground: #FFFFFF;
+  --color-primary: #ffffff;
+  --color-primary-foreground: #2B6B7F;
 
-  --color-secondary: #000000;
-  --color-secondary-foreground: #000000;
+  --color-secondary: #4A6B4A;
+  --color-secondary-foreground: #ffffff;
 
-  --color-muted: #000000;
-  --color-muted-foreground: #000000;
+  --color-muted: rgba(255,255,255,0.6);
+  --color-muted-foreground: rgba(255,255,255,0.6);
 
-  --color-accent: #f7781e;
+  --color-accent: #8bab8b;
   --color-accent-foreground: #FFFFFF;
 
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
 
-  --color-border: #000000;
-  --color-input: #000000;
-  --color-ring: #000000;
+  --color-border: rgba(255,255,255,0.2);
+  --color-input: rgba(255,255,255,0.3);
+  --color-ring: #8bab8b;
 
   --color-chart-1: #e67e22;
   --color-chart-2: #2d8659;
@@ -87,11 +87,11 @@ html, body {
   }
 
   /* Additional design system colors */
-  --color-text-primary: #000000;
-  --color-text-secondary: #000000;
-  --color-accent-coral: #f7781e;
-  --color-green-accent: #15483f;
-  --color-text-light-gray: #000000;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255,255,255,0.85);
+  --color-accent-coral: #ffffff;
+  --color-green-accent: #8bab8b;
+  --color-text-light-gray: rgba(255,255,255,0.6);
 
   /* Typography */
   --font-sans: system-ui, -apple-system, sans-serif;

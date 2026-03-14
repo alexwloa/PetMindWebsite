@@ -4,13 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - How PetMind Protects Your Data",
-  description: "Learn how PetMind protects your privacy. We explain what data we collect, how we use it, and your rights under GDPR. Your pet photos and data are safe with us.",
+  description: "Learn how PetMind protects your privacy. We explain what data we collect, how we use it, and your rights under GDPR. Your animal photos and data are safe with us.",
   alternates: {
     canonical: "https://petmind.cc/privacy",
   },
   openGraph: {
     title: "Privacy Policy - PetMind",
-    description: "Learn how PetMind protects your privacy and handles your pet data securely.",
+    description: "Learn how PetMind protects your privacy and handles your data securely.",
     url: "https://petmind.cc/privacy",
   },
 };
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           <div className="space-y-2 text-base sm:text-lg">
             <p>Email and password when you create an account</p>
             <p>Photos you upload for analysis</p>
-            <p>Pet profiles you create (name, species, breed, notes)</p>
+            <p>Animal profiles you create (name, species, breed, notes)</p>
             <p>Messages you send to the AI assistant</p>
             <p>Basic device info (device type, app version)</p>
           </div>

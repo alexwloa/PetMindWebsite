@@ -3,14 +3,14 @@ import Footer from "@/components/sections/footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ - Frequently Asked Questions About PetMind Pet Behavior App",
-  description: "Get answers to common questions about PetMind. Learn how our AI pet behavior analysis app works, supported animals, pricing, and more.",
+  title: "FAQ - Frequently Asked Questions About PetMind Animal Identifier",
+  description: "Get answers to common questions about PetMind. Learn how our AI animal identifier app works, supported animals, pricing, and more.",
   alternates: {
     canonical: "https://petmind.cc/faq",
   },
   openGraph: {
-    title: "FAQ - PetMind Pet Behavior App",
-    description: "Get answers to common questions about PetMind AI pet behavior analysis app.",
+    title: "FAQ - PetMind Animal Identifier",
+    description: "Get answers to common questions about PetMind AI animal identifier app.",
     url: "https://petmind.cc/faq",
   },
 };
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is PetMind?",
-    a: "PetMind is a mobile app that helps you understand your pet's behavior. Upload photos or videos of your pet and get insights into their emotional state and needs.",
+    a: "PetMind is a mobile app that helps you understand your animal's behavior. Upload photos of your animal and get AI-powered insights into their emotional state and needs.",
   },
   {
     q: "Does it work on iOS and Android?",
@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     q: "Can PetMind replace a vet?",
-    a: "No. PetMind is for entertainment and informational purposes only. It cannot diagnose illnesses or provide medical advice. If your pet shows signs of illness, always consult a veterinarian.",
+    a: "No. PetMind is for entertainment and informational purposes only. It cannot diagnose illnesses or provide medical advice. If your animal shows signs of illness, always consult a veterinarian.",
   },
   {
     q: "What animals does PetMind support?",
-    a: "PetMind works best with dogs and cats, but you can try it with other pets too. The AI analyzes body language and facial expressions to provide insights.",
+    a: "PetMind works best with dogs and cats, but you can try it with any animal. The AI analyzes body language and facial expressions to provide insights.",
   },
 ];
 

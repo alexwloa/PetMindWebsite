@@ -4,13 +4,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service - PetMind App Usage Terms",
-  description: "Read PetMind's Terms of Service. Understand your rights and responsibilities when using our AI pet behavior analysis app. Simple, clear terms.",
+  description: "Read PetMind's Terms of Service. Understand your rights and responsibilities when using our AI animal identifier app. Simple, clear terms.",
   alternates: {
     canonical: "https://petmind.cc/terms",
   },
   openGraph: {
     title: "Terms of Service - PetMind",
-    description: "Terms of Service for PetMind AI pet behavior analysis app.",
+    description: "Terms of Service for PetMind AI animal identifier app.",
     url: "https://petmind.cc/terms",
   },
 };

@@ -7,11 +7,11 @@ const GA_MEASUREMENT_ID = "G-72ZEWRK383";
 
 export const metadata: Metadata = {
   title: {
-    default: "PetMind - AI Pet Behavior Analysis App | Understand Your Pets Better",
-    template: "%s | PetMind",
+    default: "PetMind - Animal Identifier",
+    template: "%s | PetMind - Animal Identifier",
   },
-  description: "PetMind is a mobile app that helps you understand your pet's behavior. Upload photos or videos of your dog, cat, or any pet and get AI-powered insights into their emotional state, needs, and behavior patterns. Available on iOS and Android.",
-  keywords: ["pet app", "pet behavior", "dog behavior", "cat behavior", "pet analysis", "AI pet", "understand pets", "pet emotions", "animal behavior", "pet care", "pet health", "dog app", "cat app", "pet training"],
+  description: "Identify any animal instantly with AI. Snap a photo to discover species, breeds & behavior insights. Download PetMind free for iOS & Android.",
+  keywords: ["animal identifier app", "AI animal identification", "identify dog breed", "identify cat breed", "animal species identifier", "pet behavior analysis", "what breed is my dog", "identify animal by photo", "animal behavior app", "pet identifier", "dog breed scanner", "cat breed identifier"],
   authors: [{ name: "PetMind" }],
   creator: "PetMind",
   publisher: "PetMind",
@@ -32,21 +32,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://petmind.cc",
     siteName: "PetMind",
-    title: "PetMind - AI Pet Behavior Analysis App | Understand Your Pets Better",
-    description: "PetMind helps you understand your pet's behavior with AI-powered photo and video analysis. Get insights into your dog's or cat's emotional state and needs.",
+    title: "PetMind - AI Animal Identifier & Behavior App",
+    description: "Identify any animal instantly with AI. Snap a photo to discover species, breeds & behavior insights. Free for iOS & Android.",
     images: [
       {
         url: "/icon.png",
         width: 512,
         height: 512,
-        alt: "PetMind Logo - AI Pet Behavior Analysis App",
+        alt: "PetMind Logo - AI Animal Identifier App",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "PetMind - AI Pet Behavior Analysis App",
-    description: "Understand your pet's behavior with AI-powered photo and video analysis. Available on iOS and Android.",
+    title: "PetMind - AI Animal Identifier & Behavior App",
+    description: "Identify any animal instantly with AI. Snap a photo to discover species, breeds & behavior insights. Free for iOS & Android.",
     images: ["/icon.png"],
     creator: "@petmind",
   },
@@ -84,7 +84,7 @@ const jsonLd = {
       sameAs: [],
       contactPoint: {
         "@type": "ContactPoint",
-        email: "support@petmind.app",
+        email: "mobilemediaconnects@gmail.com",
         contactType: "customer service",
       },
     },
@@ -108,7 +108,7 @@ const jsonLd = {
       name: "PetMind",
       operatingSystem: "iOS, Android",
       applicationCategory: "LifestyleApplication",
-      description: "PetMind is a mobile app that helps you understand your pet's behavior. Upload photos or videos of your dog, cat, or any pet and get AI-powered insights into their emotional state, needs, and behavior patterns.",
+      description: "PetMind is an AI-powered animal identifier app. Upload a photo of any animal and get instant species identification, breed detection, and behavior insights. Available on iOS and Android.",
       offers: {
         "@type": "Offer",
         price: "0",
@@ -129,8 +129,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://petmind.cc/#webpage",
       url: "https://petmind.cc",
-      name: "PetMind - AI Pet Behavior Analysis App | Understand Your Pets Better",
-      description: "PetMind is a mobile app that helps you understand your pet's behavior with AI-powered photo and video analysis.",
+      name: "PetMind - AI Animal Identifier & Behavior App",
+      description: "Identify any animal instantly with AI. Discover species, breeds & behavior insights with PetMind.",
       isPartOf: {
         "@id": "https://petmind.cc/#website",
       },
@@ -153,7 +153,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.png" type="image/png" />
+        <meta name="theme-color" content="#2B6B7F" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

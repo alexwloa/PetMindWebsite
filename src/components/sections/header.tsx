@@ -31,7 +31,7 @@ const Header = () => {
           height={36}
           className="h-9 w-9 rounded-full"
         />
-        <span className="text-2xl font-semibold text-black">PetMind</span>
+        <span className="text-2xl font-semibold text-white">PetMind</span>
       </Link>
       
       {/* Desktop navigation - hidden on mobile */}
@@ -58,7 +58,7 @@ const Header = () => {
       <DropdownMenu>
         <DropdownMenuTrigger asChild className="md:hidden">
           <button className="p-2 outline-none focus:outline-none" aria-label="Menü öffnen">
-            <Menu className="h-6 w-6 text-black" />
+            <Menu className="h-6 w-6 text-white" />
           </button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="w-40">

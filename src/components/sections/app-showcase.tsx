@@ -5,9 +5,9 @@ const AppShowcase = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Start with first phone active
 
   const phones = [
-    { id: 0, title: "PetMind", subtitle: "App Screenshot 1", video: "/main1(1).mp4" },
-    { id: 1, title: "PetMind", subtitle: "App Screenshot 2", video: "/second.mp4" },
-    { id: 2, title: "PetMind", subtitle: "App Screenshot 3", video: "/third.mp4" }
+    { id: 0, title: "PetMind", subtitle: "App Screenshot 1", image: "/main1.png" },
+    { id: 1, title: "PetMind", subtitle: "App Screenshot 2", image: "/pet1.png" },
+    { id: 2, title: "PetMind", subtitle: "App Screenshot 3", image: "/analyse1.png" }
   ];
 
   const testimonials = [
@@ -28,14 +28,14 @@ const AppShowcase = () => {
     {
       id: 3,
       name: "Lisa K.",
-      text: "The AI analysis is spot on. My pets are happier now!",
+      text: "The AI analysis is spot on. My animals are happier now!",
       rating: 5,
       position: "bottom-left"
     },
     {
       id: 4,
       name: "Tom B.",
-      text: "Best pet app ever! Understanding my pets has never been easier.",
+      text: "Best animal app ever! Understanding my animals has never been easier.",
       rating: 5,
       position: "bottom-right"
     }
@@ -72,10 +72,10 @@ const AppShowcase = () => {
           {testimonials.map((testimonial) => (
              <div
                key={testimonial.id}
-               className={`${getTestimonialPosition(testimonial.position)} bg-[#15483f] rounded-lg p-6 shadow-lg border border-white/20 hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer`}
+               className={`${getTestimonialPosition(testimonial.position)} bg-card rounded-lg p-6 shadow-lg border border-white/20 hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer`}
              >
                <div className="flex items-center mb-3">
-                 <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-base mr-3">
+                 <div className="w-10 h-10 bg-[#4A6B4A] rounded-full flex items-center justify-center text-white font-bold text-base mr-3">
                    {testimonial.name.charAt(0)}
                  </div>
                  <span className="font-semibold text-base text-white">{testimonial.name}</span>
@@ -113,18 +113,12 @@ const AppShowcase = () => {
               className={`absolute top-0 w-[240px] sm:w-[280px] h-[480px] sm:h-[580px] p-[8px] sm:p-[10px] bg-[#222222] rounded-[32px] sm:rounded-[40px] shadow-[0_15px_40px_0_rgba(0,0,0,0.15)] sm:shadow-[0_20px_50px_0_rgba(0,0,0,0.2)] transform transition-all duration-500 cursor-pointer ${position}`}
               onClick={() => setActiveIndex(index)}
             >
-              {/* Notch */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80px] sm:w-[100px] h-[20px] sm:h-[25px] bg-[#222222] rounded-b-[12px] sm:rounded-b-[15px] z-10" />
-              
               {/* Screen */}
               <div className="w-full h-full bg-black rounded-[24px] sm:rounded-[30px] overflow-hidden">
-                <video
-                  src={phone.video}
+                <img
+                  src={phone.image}
+                  alt={phone.subtitle}
                   className="w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
                 />
               </div>
             </div>
@@ -138,9 +132,9 @@ const AppShowcase = () => {
               key={index}
               onClick={() => setActiveIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === activeIndex 
-                  ? 'bg-black scale-110' 
-                  : 'bg-gray-400 hover:bg-gray-600'
+                index === activeIndex
+                  ? 'bg-white scale-110'
+                  : 'bg-white/40 hover:bg-white/60'
               }`}
             />
           ))}
