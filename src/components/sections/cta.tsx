@@ -39,7 +39,7 @@ const CtaSection = () => {
 
   return (
     <section className="text-center py-8 sm:py-12 px-4">
-      <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-semibold" style={{ color: 'var(--color-accent-coral)' }}>Ready to understand your animals better?</h2>
+      <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-semibold text-[#8bab8b]">Ready to understand your animals better?</h2>
       <p className="mt-4 sm:mt-6 text-base sm:text-lg text-muted-foreground">
         Join thousands of animal owners understanding their animals better
       </p>
@@ -50,7 +50,7 @@ const CtaSection = () => {
       
       {/* Mobile Testimonials - Only visible on mobile/tablet */}
       <div className="xl:hidden mt-12 px-4">
-        <h3 className="text-[20px] sm:text-[22px] font-semibold mb-8" style={{ color: 'var(--color-accent-coral)' }}>What our users say</h3>
+        <h3 className="text-[20px] sm:text-[22px] font-semibold mb-8 text-[#8bab8b]">What our users say</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
           {testimonials.map((testimonial) => (
             <div
