@@ -58,14 +58,14 @@ const Header = () => {
             <Menu className="h-5 w-5 text-white" />
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="w-40">
+        <DropdownMenuContent align="end" className="w-40 bg-white border-gray-200">
           {links.map((link) => {
             const isActive = pathname === link.href;
             return (
               <DropdownMenuItem key={link.label} asChild>
                 <Link
                   href={link.href}
-                  className={`w-full ${isActive ? 'font-semibold' : ''}`}
+                  className={`w-full text-black hover:text-black ${isActive ? 'font-semibold' : 'text-black/70'}`}
                 >
                   {link.label}
                 </Link>

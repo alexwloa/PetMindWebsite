@@ -15,11 +15,13 @@ export default function CookieBanner() {
 
   const acceptAll = () => {
     localStorage.setItem("cookie-consent", "all");
+    window.dispatchEvent(new Event("cookie-consent-update"));
     setShowBanner(false);
   };
 
   const acceptNecessary = () => {
     localStorage.setItem("cookie-consent", "necessary");
+    window.dispatchEvent(new Event("cookie-consent-update"));
     setShowBanner(false);
   };
 
@@ -31,11 +33,11 @@ export default function CookieBanner() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex-1">
             <p className="text-sm text-gray-700 dark:text-gray-300">
-              Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie unserer{" "}
-              <Link href="/privacy" className="underline hover:text-gray-900 dark:hover:text-white">
-                Datenschutzerklärung
-              </Link>{" "}
-              zu.
+              We use cookies to improve your experience. By using our website you agree to our{" "}
+              <Link href="/privacy" className="underline text-teal-700 dark:text-teal-400 hover:text-teal-900 dark:hover:text-teal-200">
+                Privacy Policy
+              </Link>
+              .
             </p>
           </div>
           <div className="flex gap-3 shrink-0">
@@ -43,13 +45,13 @@ export default function CookieBanner() {
               onClick={acceptNecessary}
               className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors"
             >
-              Nur notwendige
+              Necessary only
             </button>
             <button
               onClick={acceptAll}
               className="px-4 py-2 text-sm font-medium text-white bg-black dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 rounded-lg transition-colors"
             >
-              Alle akzeptieren
+              Accept all
             </button>
           </div>
         </div>

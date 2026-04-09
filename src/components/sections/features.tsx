@@ -17,7 +17,7 @@ const featuresData = [
 
 const FeatureCard = ({ title, description, index }: { title: string; description: string; index: number }) => {
   return (
-    <div className="flex h-full flex-col rounded-xl sm:rounded-2xl border border-white/20 bg-card py-8 sm:py-10 px-6 sm:px-8 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.2)] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+    <div className="flex h-full flex-col rounded-xl sm:rounded-2xl border border-white/20 bg-card py-6 sm:py-8 px-5 sm:px-7 shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.2)] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
       <span className="text-sm font-medium text-white/30 mb-4 tracking-widest uppercase">Step {index + 1}</span>
       <h3 className="mb-3 text-[22px] sm:text-[24px] font-bold leading-tight text-white">{title}</h3>
       <p className="text-[15px] sm:text-base text-white/70 leading-relaxed">{description}</p>
@@ -27,9 +27,9 @@ const FeatureCard = ({ title, description, index }: { title: string; description
 
 const Features = () => {
   return (
-    <section className="bg-background py-14 sm:py-20">
+    <section className="bg-background py-8 sm:py-12">
       <div className="mx-auto max-w-[390px] sm:max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-12 sm:mb-16 text-center text-[28px] sm:text-[32px] md:text-[36px] font-semibold text-[#8bab8b]">
+        <h2 className="mb-6 sm:mb-10 text-center text-[28px] sm:text-[32px] md:text-[36px] font-semibold text-[#8bab8b]">
           How PetMind Works
         </h2>
         <div className="mx-auto grid max-w-[390px] sm:max-w-5xl grid-cols-1 items-stretch gap-4 sm:gap-6 md:grid-cols-3">

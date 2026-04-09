@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <header className="w-full px-4 sm:px-6 lg:px-8 pt-0 md:pt-1 pb-6 text-center">
       {/* Headline */}
-      <h1 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold leading-[1.1] text-text-primary">
+      <h1 className="text-[28px] sm:text-[48px] md:text-[56px] font-bold leading-[1.1] text-text-primary">
         Understand your animals
       </h1>
-      
-      <h1 className="-mt-2 sm:-mt-3 md:-mt-4 mb-6 text-[40px] sm:text-[48px] md:text-[56px] font-bold leading-[1.1] text-[#8bab8b]">
+
+      <h1 className="-mt-1 sm:-mt-3 md:-mt-4 mb-6 text-[28px] sm:text-[48px] md:text-[56px] font-bold leading-[1.1] text-[#8bab8b]">
         better than ever
       </h1>
       

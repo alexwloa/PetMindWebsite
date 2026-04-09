@@ -35,7 +35,7 @@ export default function Home() {
       {/* Place hero full-width so heading sits top-left */}
       <Hero />
       {/* Phone mockup full-width */}
-      <div className="mt-20 md:mt-28">
+      <div className="mt-8 md:mt-28">
         <AppShowcase />
       </div>
       <div className="w-full border-t border-white/10"></div>
@@ -46,12 +46,12 @@ export default function Home() {
         <div className="mx-auto max-w-[390px] sm:max-w-2xl lg:max-w-4xl px-4">
           <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-semibold mb-8 text-center text-[#8bab8b]">FAQ</h2>
 
-          <div>
+          <div className="rounded-2xl border border-white/30 p-6 sm:p-8">
             {faqs.map((item, index) => (
               <details
                 key={item.q}
-                className={`group py-6 sm:py-7 ${
-                  index !== faqs.length - 1 ? 'border-b border-white/10' : ''
+                className={`group py-5 sm:py-6 ${
+                  index !== faqs.length - 1 ? 'border-b border-white/15' : ''
                 }`}
               >
                 <summary className="cursor-pointer list-none font-semibold text-white text-xl sm:text-2xl flex items-center justify-between gap-4">
